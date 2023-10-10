@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+.sklills-icon{
+  width: 130px;
+}
+
+@media  (max-width:400px) {
+  .sklills-icon{
+    width: 90px !important;
+  }
+}

@@ -22,7 +22,7 @@ const Home = () => {
                 <div>
                     <h3 className='text-light '>Hello, my name is</h3>
                     <h1 className='text-light my-4 fw-bold' style={{fontSize:'5rem'}}>Dhiraj <span className='text-danger'>Mahadik</span></h1>
-                    <button  className='btn btn-danger  my-2' ><a className='text-light text-decoration-none' href="https://drive.google.com/file/d/1xTKynctaA3PkkamMroRiab1Iebjvh__r/view" target="_blank" rel="noopener noreferrer">Hire Me</a></button>
+                    <button  className='btn btn-danger  my-2' ><a className='text-light text-decoration-none' href="https://drive.google.com/file/d/1GOCanT8nFeCFXRYFzgy42uSCujLnx8Iy/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Hire Me</a></button>
                 </div>
                 </div>
             </div>

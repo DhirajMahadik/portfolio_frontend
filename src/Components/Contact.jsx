@@ -15,10 +15,11 @@ const Contact = () => {
 
     const submitForm = (e) =>{
         e.preventDefault();
-        axios.post('http://127.0.0.1:5500/api/submit-contact-form',formData)
+        axios.post(`${process.env.REACT_APP_URL}/api/submit-contact-form` ,formData)
         .then((response)=>{
             setMessage({message:'Thank You..',type:'success'})
             setAlert(true)
+            setFormData({name:'', message:'',email:''})
             setTimeout(()=>{
                 setAlert(false)
             },3000)
@@ -61,15 +62,15 @@ const Contact = () => {
                     {alert && <h6 className={`text-${message.type} text-center my-3`}>{message.message}</h6>}
                     <form  onSubmit={submitForm}>
                         <div className="form-floating mb-3 ">
-                            <input required type="text" name='name' className="form-control text-light bg-transparent" id="floatingInput" placeholder="Name" onChange={onchangeHandler} />
+                            <input required type="text" value={formData.name} name='name' className="form-control text-light bg-transparent" id="floatingInput" placeholder="Name" onChange={onchangeHandler} />
                             <label htmlFor="floatingInput"  className='bg-transparent'>Your Name </label>
                         </div>
                         <div className="form-floating mb-3">
-                            <input required type="email" name='email' className="form-control text-light bg-transparent" id="floatingPassword" placeholder="Email" onChange={onchangeHandler}  />
+                            <input required type="email" value={formData.email} name='email' className="form-control text-light bg-transparent" id="floatingPassword" placeholder="Email" onChange={onchangeHandler}  />
                             <label htmlFor="floatingPassword">Email</label>
                         </div>
                         <div className="form-floating mb-3">
-                            <textarea required  name='message' className="form-control text-light bg-transparent" rows={44} placeholder="Leave a message here" id="floatingTextarea" onChange={onchangeHandler} ></textarea>
+                            <textarea required value={formData.message} name='message' className="form-control text-light bg-transparent" rows={44} placeholder="Leave a message here" id="floatingTextarea" onChange={onchangeHandler} ></textarea>
                             <label htmlFor="floatingTextarea" >Message</label>
                         </div>
                         <div className="d-flex">

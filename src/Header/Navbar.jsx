@@ -11,7 +11,7 @@ const Navbar = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse justify-content-end navbar-collapse bg-dark" id="navbarNavAltMarkup">
+                    <div className="collapse justify-content-end navbar-collapse bg-dark px-4 rounded" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <Link  className="nav-link text-light" aria-current="page" to="/">Home</Link>
                             <a  className="nav-link text-light" href="#work-samples">Portfolio</a>

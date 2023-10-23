@@ -1,9 +1,15 @@
+import { useEffect } from 'react'
 import apiWithRedux from '../assets/images/apiswithredux.jpg'
 import digitalDiary from '../assets/images/digitalDiary.png'
 import myMess from '../assets/images/mymess.png'
 import todo from '../assets/images/todo.png'
+import AOS from 'aos'
 
 const WorkSamples = () => {
+
+    useEffect(()=>{
+        AOS.init()
+    },[])
 
     return (
         <>
@@ -13,7 +19,7 @@ const WorkSamples = () => {
             </div>
             <div className="row justify-content-center align-items-center py-4">
                 <div className="col-md-3 m-4">  
-                    <div className="card text-bg-dark h-100" >
+                    <div className="card text-bg-dark h-100" data-aos="zoom-in" >
                         <img src={apiWithRedux} className="card-img opacity-50" alt="..." style={{height:'210px'}} />
                         <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                             <h5 className="card-title fw-bold">API Integration with redux toolkit</h5>
@@ -23,7 +29,7 @@ const WorkSamples = () => {
                     </div>
                 </div>
                 <div className="col-md-3 m-4">
-                <div className="card text-bg-dark h-100" >
+                <div className="card text-bg-dark h-100" data-aos="zoom-in" >
                         <img src={myMess} className="card-img opacity-50" alt="..." style={{height:'210px'}} />
                         <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                             <h5 className="card-title fw-bold">Mess / Hotels Portal</h5>
@@ -33,7 +39,7 @@ const WorkSamples = () => {
                     </div>
                 </div>
                 <div className="col-md-3 m-4">
-                <div className="card text-bg-dark h-100" >
+                <div className="card text-bg-dark h-100" data-aos="zoom-in">
                         <img src={todo} className="card-img opacity-50" alt="..." style={{height:'210px'}} />
                         <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                             <h5 className="card-title fw-bold">To Do List Web Application</h5>
@@ -43,7 +49,7 @@ const WorkSamples = () => {
                     </div>
                 </div>
                 <div className="col-md-3 m-4">
-                <div className="card text-bg-dark h-100" >
+                <div className="card text-bg-dark h-100" data-aos="zoom-in">
                         <img src={digitalDiary} className="card-img opacity-50" alt="..." style={{height:'210px'}} />
                         <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                             <h5 className="card-title fw-bold">Task Management</h5>
@@ -53,7 +59,7 @@ const WorkSamples = () => {
                     </div>
                 </div>
                 <div className="col-md-3 m-4">
-                <div className="card text-bg-dark h-100" >
+                <div className="card text-bg-dark h-100" data-aos="zoom-in" >
                         <img src={apiWithRedux} className="card-img opacity-50" alt="..." style={{height:'210px'}} />
                         <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                             <h5 className="card-title fw-bold">Bloging Web Application</h5>

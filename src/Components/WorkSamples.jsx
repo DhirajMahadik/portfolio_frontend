@@ -15,7 +15,7 @@ const WorkSamples = () => {
         <>
         <div className='container' id='work-samples'>
             <div>
-                <h1 className='text-warning text-center fw-bold'>Work Samples</h1>
+                <h1 className='text-warning text-center fw-bold'>Personal Projects</h1>
             </div>
             <div className="row justify-content-center align-items-center py-4">
                 <div className="col-md-3 m-4">  

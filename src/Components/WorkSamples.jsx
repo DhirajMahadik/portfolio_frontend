@@ -65,7 +65,7 @@ const WorkSamples = () => {
                         <div className="card-img-overlay d-flex flex-column align-items-center justify-content-center">
                             <h5 className="card-title fw-bold text-center">API Integration with redux toolkit</h5>
                             <p className="card-text fw-bold text-center">Complete CRUD APIs integration with Redux Toolkit, Handling globle state.</p>
-                            <a href='' target='_blank'  rel="noreferrer" className='btn btn-sm btn-warning position-absolute disabled sticky-bottom my-3'>Live not available</a>
+                            <a href='https://github.com/DhirajMahadik/apis-with-redux' target='_blank'  rel="noreferrer" className='btn btn-sm btn-warning position-absolute disabled sticky-bottom my-3'>Live not available</a>
                         </div>
                     </div>
                 </div>

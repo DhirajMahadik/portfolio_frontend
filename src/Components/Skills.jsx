@@ -18,7 +18,7 @@ const Skills = () => {
         <div className='d-flex flex-wrap justify-content-center'>
           <div className='sklills-icon d-flex flex-column justify-content-center m-4' data-aos="fade-up">
             <FaReact color='#61dbfb' size={80} className='m-auto' />
-            <span className='text-light text-center my-2'>Rract Js</span>
+            <span className='text-light text-center my-2'>React Js</span>
           </div>
           <div className='sklills-icon d-flex flex-column justify-content-center m-4' data-aos="fade-up">
             <SiJavascript color='yellow' size={80} className='m-auto' />
